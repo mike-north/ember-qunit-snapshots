@@ -35,7 +35,7 @@
     "ember-cli-typescript": "2.0.0-beta.3",
     "fs-extra": "7.0.0",
     "json-typescript": "1.0.1",
-    "qunit-snapshot": "1.1.4",
+    "qunit-snapshot": "^1.1.4",
     "snap-shot-core": "7.1.8"
   },
   "devDependencies": {
