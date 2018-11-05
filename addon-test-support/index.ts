@@ -56,7 +56,7 @@ export function install(qunit: QUnit = QUnit) {
               'Content-Type': 'application/json; charset=utf-8',
               accept: 'application/json'
             },
-            body: serializedSnap
+            body: `{ "snapshot": ${serializedSnap} }`
           }
         )
           .then(resp => {

@@ -8,9 +8,11 @@
 ember install ember-qunit-snapshots
 ```
 
+## Why
+
 ## Usage
 
-[Longer description of how to use the addon in apps.]
+First, install these tests in your app
 
 ## Contributing
 
