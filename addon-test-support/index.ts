@@ -43,8 +43,7 @@ export function install(qunit: QUnit = QUnit) {
         if (!SNAPSHOTS) return;
         const moduleSnapshots = SNAPSHOTS[slug(moduleName)];
         if (!moduleSnapshots) return;
-        const s = moduleSnapshots[[testName, snapName].map(slug).join('-')];
-        return s;
+        return moduleSnapshots[[testName, snapName].map(slug).join('-')];
       },
       saveSnapshot(
         moduleName,

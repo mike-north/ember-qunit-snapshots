@@ -4,9 +4,9 @@ import loadInitializers from 'ember-load-initializers';
 import config from './config/environment';
 
 const App = Application.extend({
+  Resolver,
   modulePrefix: config.modulePrefix,
-  podModulePrefix: config.podModulePrefix,
-  Resolver
+  podModulePrefix: config.podModulePrefix
 });
 
 loadInitializers(App, config.modulePrefix);
