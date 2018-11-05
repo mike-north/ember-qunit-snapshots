@@ -1,6 +1,7 @@
 # ember-qunit-snapshots
 
-[Short description of the addon.]
+[![Build Status](https://travis-ci.org/mike-north/ember-qunit-snapshots.svg?branch=master)](https://travis-ci.org/mike-north/ember-qunit-snapshots)
+[![Version](https://img.shields.io/npm/v/ember-qunit-snapshots.svg)](https://www.npmjs.com/package/ember-qunit-snapshots)
 
 ## Installation
 
