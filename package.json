@@ -5,7 +5,7 @@
   "keywords": [
     "ember-addon"
   ],
-  "license": "bsd-2-clause",
+  "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
     "url": "https://github.com/mike-north/ember-qunit-snapshots.git"
@@ -30,7 +30,8 @@
     "postpublish": "ember ts:clean"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.16.0"
+    "ember-cli-babel": "^6.16.0",
+    "qunit-snapshot": "^0.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "7.2.1",
