@@ -1,17 +1,43 @@
+import { Value as JSONValue } from 'json-typescript';
 import { install as installSnapshot } from 'qunit-snapshot';
 
 function slug(raw: string) {
   return raw.replace(/[^a-zA-Z0-9]+/g, '-').toLowerCase();
 }
 
+const SNAPSHOTS: {
+  [k: string]: SnapshotTest;
+} = {};
+
+interface SnapshotTest {
+  [k: string]: JSONValue;
+}
+interface SnapshotFile {
+  name: string;
+  tests: SnapshotTest;
+}
+type AllSnapshots = SnapshotFile[];
+
 export function install(qunit: QUnit = QUnit) {
   return Promise.resolve().then(() =>
     installSnapshot(qunit, {
       loadSnapshots() {
-        return fetch(`/___SNAPSHOTS___/snapshots`).then(() => true);
+        return fetch(`/___SNAPSHOTS___/snapshots`)
+          .then(resp => resp.json())
+          .then((data: AllSnapshots) => {
+            data.forEach(fileData => {
+              const { name, tests } = fileData;
+              SNAPSHOTS[name] = tests;
+            });
+            return true;
+          });
       },
-      getSnapshot(moduleName, testName, snapName) {
-        return null as any;
+      getSnapshot(moduleName: string, testName, snapName) {
+        if (!SNAPSHOTS) return;
+        const moduleSnapshots = SNAPSHOTS[slug(moduleName)];
+        if (!moduleSnapshots) return;
+        const s = moduleSnapshots[[testName, snapName].map(slug).join('-')];
+        return s;
       },
       saveSnapshot(
         moduleName,

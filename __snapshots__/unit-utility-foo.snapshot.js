@@ -1,7 +1,11 @@
 exports['it-works-mars'] = {
-  hello: 'mafrs'
-};
+  "hello": "mafrs"
+}
 
 exports['it-works-w'] = {
-  hello: 'worlddddd'
-};
+  "hello": "world"
+}
+
+exports['it-works-world'] = {
+  "hello": "world"
+}
