@@ -3839,8 +3839,9 @@ define-property@^2.0.2:
     is-descriptor "^1.0.2"
     isobject "^3.0.1"
 
-definitelytyped-header-parser@Microsoft/definitelytyped-header-parser#production:
+"definitelytyped-header-parser@github:Microsoft/definitelytyped-header-parser#production":
   version "0.0.0"
+  uid "6ff181ecd781706f200f8a780b0133a85fd0a69f"
   resolved "https://codeload.github.com/Microsoft/definitelytyped-header-parser/tar.gz/6ff181ecd781706f200f8a780b0133a85fd0a69f"
   dependencies:
     "@types/parsimmon" "^1.3.0"
@@ -3933,12 +3934,12 @@ dotenv@^5.0.1:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-5.0.1.tgz#a5317459bd3d79ab88cff6e44057a6a3fbb1fcef"
   integrity sha512-4As8uPrjfwb7VXC+WnLCbXK7y+Ueb2B3zgNCePYfhxS1PYeaO1YTeplffTEcbfLhvFNGLAz90VvJs9yomG7bow==
 
-dtslint@^0.3.0:
+dtslint@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/dtslint/-/dtslint-0.3.0.tgz#918e664a6f7e1f54ba22088daa2bc6e64a6001c1"
   integrity sha512-3oWL8MD+2nKaxmNzrt8EAissP63hNSJ4OLr/itvNnPdAAl+7vxnjQ8p2Zdk0MNgdenqwk7GcaUDz7fQHaPgCyA==
   dependencies:
-    definitelytyped-header-parser Microsoft/definitelytyped-header-parser#production
+    definitelytyped-header-parser "github:Microsoft/definitelytyped-header-parser#production"
     fs-promise "^2.0.0"
     strip-json-comments "^2.0.1"
     tslint "^5.9.1"
@@ -9150,7 +9151,7 @@ qunit-dom@0.7.1:
     broccoli-funnel "^2.0.0"
     broccoli-merge-trees "^2.0.0"
 
-qunit-snapshot@^1.2.0:
+qunit-snapshot@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/qunit-snapshot/-/qunit-snapshot-1.2.0.tgz#6ae375012bc7b373d080cf1366eca1e7992ea154"
   integrity sha512-6YOcqh2qsbXm19FzxXKm1WhPuLnNAM2wlVblntHmWGB03/RiAf8gbai+D0l4xo/Czflv9bT0m4RCiB/zbQmjUA==
@@ -9888,7 +9889,7 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release@^15.10.7:
+semantic-release@15.10.7:
   version "15.10.7"
   resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.10.7.tgz#c1ab858363a9eff078a9cb7355f478482b6ba3f0"
   integrity sha512-tG94NSTecmpQoxUmJZM5ymp3R2CT+26WoQhS5cnXz/QPNTooJBnkXGvKK6Vrgg9nrPRtsylSQDBWvZ0fPWjfew==
@@ -10860,7 +10861,7 @@ traverse@~0.6.6:
   resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
   integrity sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=
 
-travis-deploy-once@^5.0.9:
+travis-deploy-once@5.0.9:
   version "5.0.9"
   resolved "https://registry.yarnpkg.com/travis-deploy-once/-/travis-deploy-once-5.0.9.tgz#c5a2f639e17d8fd542f66d25ade126179d5e8acf"
   integrity sha512-cyHFErzq0HTEGY29RAq1clqFdt/IkCrlcOmyM1cGoGnEyukrrFi1fpy6JH3Mlf+88XsFwvluqKVWzj2bdz3k8A==
@@ -10990,7 +10991,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript-tslint-plugin@^0.0.4:
+typescript-tslint-plugin@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/typescript-tslint-plugin/-/typescript-tslint-plugin-0.0.4.tgz#8f403606b94a0be64823ba584264dfd52885e4f3"
   integrity sha512-4ulIuRFrBfc52rmUvwOyPM8oRSqKmhyixpbk6v/1WaeoP9lc8o8lauCPpY7NFCK5FI3JZ/Znuak7OqBflwycTw==
