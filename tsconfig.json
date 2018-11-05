@@ -20,28 +20,13 @@
     "baseUrl": ".",
     "module": "es6",
     "paths": {
-      "dummy/tests/*": [
-        "tests/*"
-      ],
-      "dummy/*": [
-        "tests/dummy/app/*",
-        "app/*"
-      ],
-      "ember-qunit-snapshots": [
-        "addon"
-      ],
-      "ember-qunit-snapshots/*": [
-        "addon/*"
-      ],
-      "ember-qunit-snapshots/test-support": [
-        "addon-test-support"
-      ],
-      "ember-qunit-snapshots/test-support/*": [
-        "addon-test-support/*"
-      ],
-      "*": [
-        "types/*"
-      ]
+      "dummy/tests/*": ["tests/*"],
+      "dummy/*": ["tests/dummy/app/*", "app/*"],
+      "ember-qunit-snapshots": ["addon"],
+      "ember-qunit-snapshots/*": ["addon/*"],
+      "ember-qunit-snapshots/test-support": ["addon-test-support"],
+      "ember-qunit-snapshots/test-support/*": ["addon-test-support/*"],
+      "*": ["types/*"]
     }
   },
   "include": [
