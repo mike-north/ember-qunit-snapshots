@@ -32,6 +32,13 @@ export function install(qunit: QUnit = QUnit) {
             return true;
           });
       },
+      sanitize(type: 'element' | 'other', value: any) {
+        if (type === 'element') {
+          return value.replace(/\s+id="ember[0-9]+"/g, '');
+        } else {
+          return value;
+        }
+      },
       getSnapshot(moduleName: string, testName, snapName) {
         if (!SNAPSHOTS) return;
         const moduleSnapshots = SNAPSHOTS[slug(moduleName)];

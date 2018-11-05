@@ -9090,10 +9090,10 @@ qunit-dom@0.7.1:
     broccoli-funnel "^2.0.0"
     broccoli-merge-trees "^2.0.0"
 
-qunit-snapshot@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/qunit-snapshot/-/qunit-snapshot-1.1.4.tgz#a4b87b0acf3b3bf7e2b2b854b75a2aa4ab87001f"
-  integrity sha512-N/r4bYWW9UyHsVXnB/nOluVeC26u4d+cCBQhfnHyqnQui2YJfyJ8YUg/vAhE+b3jSaghPbskaRkVC9mIjdNdlg==
+qunit-snapshot@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/qunit-snapshot/-/qunit-snapshot-1.2.0.tgz#6ae375012bc7b373d080cf1366eca1e7992ea154"
+  integrity sha512-6YOcqh2qsbXm19FzxXKm1WhPuLnNAM2wlVblntHmWGB03/RiAf8gbai+D0l4xo/Czflv9bT0m4RCiB/zbQmjUA==
   dependencies:
     json-stable-stringify "^1.0.1"
     qunit "^2.8.0"
