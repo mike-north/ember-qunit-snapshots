@@ -3,13 +3,7 @@
 [![Build Status](https://travis-ci.org/mike-north/ember-qunit-snapshots.svg?branch=master)](https://travis-ci.org/mike-north/ember-qunit-snapshots)
 [![Version](https://img.shields.io/npm/v/ember-qunit-snapshots.svg)](https://www.npmjs.com/package/ember-qunit-snapshots)
 
-## Installation
-
-```
-ember install ember-qunit-snapshots
-```
-
-## Why you shouldn't use snapshot testing
+## READ THIS FIRST - The pitfalls of snapshot testing - READ THIS FIRST
 
 For a certain _narrow_ subset of software tests, a lot of time can be saved by asserting against a known value that was obtained at runtime called a "snapshot". However, there are MANY pitfalls involved with relying heavily on _only_ snapshot tests for release confidence. [Justin Searls articulates many of these issues well](https://twitter.com/searls/status/919594505938112512)
 
