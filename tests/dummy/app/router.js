@@ -6,7 +6,7 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL
 });
 
-// tslint-disable-next-line
+// tslint:disable-next-line no-empty
 Router.map(function() {});
 
 export default Router;
