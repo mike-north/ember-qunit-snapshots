@@ -1,3 +1,20 @@
+# [1.1.0](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.0.3...v1.1.0) (2018-11-06)
+
+
+### Bug Fixes
+
+* refactor env-based options into their own module ([876d75f](https://github.com/mike-north/ember-qunit-snapshots/commit/876d75f))
+* remove dtslint ([b86dbb1](https://github.com/mike-north/ember-qunit-snapshots/commit/b86dbb1))
+* remove pointless functions in middleware installation ([2934108](https://github.com/mike-north/ember-qunit-snapshots/commit/2934108))
+* update qunit-snapshot to 1.3 ([1528aa2](https://github.com/mike-north/ember-qunit-snapshots/commit/1528aa2))
+* use ci-info to determine CI environment ([7b4e303](https://github.com/mike-north/ember-qunit-snapshots/commit/7b4e303))
+* use ember deprecation tooling instead of console.warn ([1288dca](https://github.com/mike-north/ember-qunit-snapshots/commit/1288dca))
+
+
+### Features
+
+* cleanup redundant code, type-check middleware, simplify import ([b510232](https://github.com/mike-north/ember-qunit-snapshots/commit/b510232))
+
 ## [1.0.3](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.0.2...v1.0.3) (2018-11-06)
 
 
