@@ -8933,7 +8933,7 @@ qunit-dom@0.7.1:
     broccoli-funnel "^2.0.0"
     broccoli-merge-trees "^2.0.0"
 
-qunit-snapshot@^1.2.1:
+qunit-snapshot@1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/qunit-snapshot/-/qunit-snapshot-1.2.1.tgz#93e0073ce09c6a8117621166cab40afc14b8b1cd"
   integrity sha512-EPLuE5dXBBfX/gBF1zlwAvd2zNZKmiSVeeXoDdWlRystDVovAL53jWXks5ZFcUz821LxdxkgHv/lWTnA2+pW/Q==
