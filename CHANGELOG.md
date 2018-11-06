@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.0.0...v1.0.1) (2018-11-06)
+
+
+### Bug Fixes
+
+* remove json-stable-stringify ([380bb0e](https://github.com/mike-north/ember-qunit-snapshots/commit/380bb0e))
+
 # 1.0.0 (2018-11-05)
 
 
