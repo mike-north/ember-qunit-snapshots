@@ -14,33 +14,36 @@ function createSnapshotFolder(rootPath) {
 
 module.exports = {
   name: require('./package').name,
-  included(appOrAddon) {
+  included(_appOrAddon) {
     this._super.included.apply(this, arguments);
     const projectRoot = this.project.root;
     createSnapshotFolder(projectRoot);
     fileLookup = this.fileLookup = {};
   },
-  /**
-   * If coverage is enabled attach coverage middleware to the express server run by ember-cli
-   * @param {Object} startOptions - Express server start options
-   */
+
+  treeForAddonTestSupport(tree) {
+    const Funnel = require('broccoli-funnel');
+
+    let namespacedTree = new Funnel(tree, {
+      srcDir: '/',
+      destDir: `/${this.moduleName()}`,
+      annotation: `Addon#treeForTestSupport (${this.name})`
+    });
+
+    return this.preprocessJs(namespacedTree, '/', this.name, {
+      registry: this.registry
+    });
+  },
+
   serverMiddleware: function(startOptions) {
-    attachMiddleware.serverMiddleware(startOptions.app, {
+    attachMiddleware.middleware(startOptions.app, {
       configPath: this.project.configPath(),
       root: this.project.root,
       fileLookup: fileLookup
     });
   },
+
   testemMiddleware: function(app) {
-    const config = {
-      configPath: this.project.configPath(),
-      root: this.project.root,
-      fileLookup: fileLookup
-    };
-    // if we're running `ember test --server` use the `serverMiddleware`.
-    if (process.argv.includes('--server') || process.argv.includes('-s')) {
-      return this.serverMiddleware({ app }, config);
-    }
-    attachMiddleware.testMiddleware(app, config);
+    this.serverMiddleware({ app });
   }
 };
