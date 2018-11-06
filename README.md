@@ -99,6 +99,17 @@ exports['it-renders-x-foo-component-with-no-parameters'] = `
 
 Every time this test is re-run, the [`outerHTML`](https://developer.mozilla.org/en-US/docs/Web/API/Element/outerHTML) of this element will be re-captured and compared against this value. **Snapshots should be committed to your git repo, as a known good value that future versions of your app may assert against**
 
+## Controlling Snapshot Evaluation
+
+Snapshots can be controlled by setting environment variables to truthy values
+
+- `SNAPSHOT_SHOW` - log snapshot value when saving new one
+- `SNAPSHOT_DRY` - only show the new snapshot value, but do not save it
+- `SNAPSHOT_UPDATE` - override snapshot value with the new one if there is difference
+- `SNAPSHOT_CI` - the tests are running on CI, which should disallow saving snapshots
+
+For convenience if `SNAPSHOT_CI` is not explicitly set and `EMBER_TRY_SCENARIO` is set to a truthy value, snapshots will run in CI mode.
+
 ## Contributing
 
 ### Installation
