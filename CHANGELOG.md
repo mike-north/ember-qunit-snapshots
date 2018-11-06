@@ -1,3 +1,12 @@
+## [1.0.3](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.0.2...v1.0.3) (2018-11-06)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency qunit-snapshot to 1.2.1 ([00fd66f](https://github.com/mike-north/ember-qunit-snapshots/commit/00fd66f))
+* only consider master builds successful if publish works ([f55a0fa](https://github.com/mike-north/ember-qunit-snapshots/commit/f55a0fa))
+* use environment variables for 'CI mode' ([2092ad0](https://github.com/mike-north/ember-qunit-snapshots/commit/2092ad0))
+
 ## [1.0.2](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.0.1...v1.0.2) (2018-11-06)
 
 
