@@ -24,7 +24,26 @@ interface SnapshotFile {
 }
 type AllSnapshots = SnapshotFile[];
 
+/**
+ * Setup snapshot testing
+ * @param qunit QUnit global
+ * @public
+ * @deprecated
+ */
 export function install(qunit: QUnit = QUnit) {
+  // tslint:disable-next-line:no-console
+  console.warn(
+    'ember-qunit-snapshots - please use `setupSnapshots` instead of `install`'
+  );
+  return setupSnapshots(qunit);
+}
+
+/**
+ * Setup snapshot testing
+ * @param qunit QUnit global
+ * @public
+ */
+export function setupSnapshots(qunit: QUnit = QUnit) {
   return Promise.resolve().then(() =>
     installSnapshot(qunit, {
       loadSnapshots() {

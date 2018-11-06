@@ -48,16 +48,14 @@ import config from '../config/environment';
 import { setApplication } from '@ember/test-helpers';
 import { start } from 'ember-qunit';
 
-// import the install hook
-import { install } from 'ember-qunit-snapshots/test-support';
+// import the setupSnapshots hook
+import { setupSnapshots } from 'ember-qunit-snapshots';
 
-// pass in the QUnit global
-install(QUnit).then(() => {
-  // wait for the promise to resolve
-  // only then, do the stuff that's typically necessary for ember to set up for testing
-  setApplication(Application.create(config.APP));
-  start();
-});
+setApplication(Application.create(config.APP));
+
+// wait for the promise to resolve
+// only then, do the stuff that's typically necessary for ember to set up for testing
+setupSnapshots().then(start);
 ```
 
 Now in your tests, you may use a new method available on the QUnit assert object
