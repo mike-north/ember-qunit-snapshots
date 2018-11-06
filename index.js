@@ -16,9 +16,6 @@ module.exports = {
   name: require('./package').name,
   included(appOrAddon) {
     this._super.included.apply(this, arguments);
-    appOrAddon.import('node_modules/json-stable-stringify/index.js', {
-      using: [{ transformation: 'cjs', as: 'json-stable-stringify' }]
-    });
     const projectRoot = this.project.root;
     createSnapshotFolder(projectRoot);
     fileLookup = this.fileLookup = {};
