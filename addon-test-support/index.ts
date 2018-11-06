@@ -1,6 +1,6 @@
+import { deprecate } from '@ember/application/deprecations';
 import { Value as JSONValue } from 'json-typescript';
 import { Snapshottable, install as installSnapshot } from 'qunit-snapshot';
-import { deprecate } from '@ember/application/deprecations';
 
 function slug(raw: string) {
   return raw.replace(/[^a-zA-Z0-9]+/g, '-').toLowerCase();
