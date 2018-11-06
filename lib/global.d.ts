@@ -18,3 +18,7 @@ declare module 'snap-shot-core' {
   }
   function core(snapOptions: SnapOptions): any;
 }
+
+declare module 'ci-info' {
+  const isCI: boolean;
+}
