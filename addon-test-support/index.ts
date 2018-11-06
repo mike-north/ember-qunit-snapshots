@@ -1,8 +1,14 @@
 import { Value as JSONValue } from 'json-typescript';
-import { install as installSnapshot } from 'qunit-snapshot';
+import { Snapshottable, install as installSnapshot } from 'qunit-snapshot';
 
 function slug(raw: string) {
   return raw.replace(/[^a-zA-Z0-9]+/g, '-').toLowerCase();
+}
+
+declare global {
+  interface Assert {
+    snapshot(value: Snapshottable, name: string): void;
+  }
 }
 
 const SNAPSHOTS: {

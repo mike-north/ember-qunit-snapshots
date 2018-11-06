@@ -3808,9 +3808,8 @@ define-property@^2.0.2:
     is-descriptor "^1.0.2"
     isobject "^3.0.1"
 
-"definitelytyped-header-parser@github:Microsoft/definitelytyped-header-parser#production":
+definitelytyped-header-parser@Microsoft/definitelytyped-header-parser#production:
   version "0.0.0"
-  uid "6ff181ecd781706f200f8a780b0133a85fd0a69f"
   resolved "https://codeload.github.com/Microsoft/definitelytyped-header-parser/tar.gz/6ff181ecd781706f200f8a780b0133a85fd0a69f"
   dependencies:
     "@types/parsimmon" "^1.3.0"
@@ -3908,7 +3907,7 @@ dtslint@0.3.0:
   resolved "https://registry.yarnpkg.com/dtslint/-/dtslint-0.3.0.tgz#918e664a6f7e1f54ba22088daa2bc6e64a6001c1"
   integrity sha512-3oWL8MD+2nKaxmNzrt8EAissP63hNSJ4OLr/itvNnPdAAl+7vxnjQ8p2Zdk0MNgdenqwk7GcaUDz7fQHaPgCyA==
   dependencies:
-    definitelytyped-header-parser "github:Microsoft/definitelytyped-header-parser#production"
+    definitelytyped-header-parser Microsoft/definitelytyped-header-parser#production
     fs-promise "^2.0.0"
     strip-json-comments "^2.0.1"
     tslint "^5.9.1"
@@ -8934,10 +8933,10 @@ qunit-dom@0.7.1:
     broccoli-funnel "^2.0.0"
     broccoli-merge-trees "^2.0.0"
 
-qunit-snapshot@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/qunit-snapshot/-/qunit-snapshot-1.2.0.tgz#6ae375012bc7b373d080cf1366eca1e7992ea154"
-  integrity sha512-6YOcqh2qsbXm19FzxXKm1WhPuLnNAM2wlVblntHmWGB03/RiAf8gbai+D0l4xo/Czflv9bT0m4RCiB/zbQmjUA==
+qunit-snapshot@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/qunit-snapshot/-/qunit-snapshot-1.2.1.tgz#93e0073ce09c6a8117621166cab40afc14b8b1cd"
+  integrity sha512-EPLuE5dXBBfX/gBF1zlwAvd2zNZKmiSVeeXoDdWlRystDVovAL53jWXks5ZFcUz821LxdxkgHv/lWTnA2+pW/Q==
   dependencies:
     json-stable-stringify "^1.0.1"
     qunit "^2.8.0"
