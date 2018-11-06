@@ -1,3 +1,4 @@
+import { deprecate } from '@ember/application/deprecations';
 import { Value as JSONValue } from 'json-typescript';
 import { Snapshottable, install as installSnapshot } from 'qunit-snapshot';
 
@@ -33,8 +34,13 @@ type AllSnapshots = SnapshotFile[];
  */
 export function install(qunit: QUnit = QUnit) {
   // tslint:disable-next-line:no-console
-  console.warn(
-    'ember-qunit-snapshots - please use `setupSnapshots` instead of `install`'
+  deprecate(
+    'ember-qunit-snapshots - please use `setupSnapshots` instead of `install`',
+    true,
+    {
+      id: 'ember-qunit-snapshots',
+      until: 'v2.0.0'
+    }
   );
   return setupSnapshots(qunit);
 }

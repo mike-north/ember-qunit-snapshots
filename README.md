@@ -106,7 +106,7 @@ Snapshots can be controlled by setting environment variables to truthy values
 - `SNAPSHOT_UPDATE` - override snapshot value with the new one if there is difference
 - `SNAPSHOT_CI` - the tests are running on CI, which should disallow saving snapshots
 
-For convenience if `SNAPSHOT_CI` is not explicitly set and `EMBER_TRY_SCENARIO` is set to a truthy value, snapshots will run in CI mode.
+For convenience if `SNAPSHOT_CI` is not explicitly set, the [`ci-info` package's `isCI` property](https://github.com/watson/ci-info#ciisci) will be used to determine whether snapshots should run in CI mode.
 
 ## Contributing
 

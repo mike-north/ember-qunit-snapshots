@@ -1,7 +1,7 @@
 'use strict';
 const path = require('path');
 const fs = require('fs');
-const attachMiddleware = require('./lib/attach-middleware');
+const { installRouter } = require('./lib/attach-middleware');
 
 let fileLookup = null;
 
@@ -36,7 +36,7 @@ module.exports = {
   },
 
   serverMiddleware: function(startOptions) {
-    attachMiddleware.middleware(startOptions.app, {
+    installRouter(startOptions.app, {
       configPath: this.project.configPath(),
       root: this.project.root,
       fileLookup: fileLookup
