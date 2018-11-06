@@ -26,6 +26,7 @@ type AllSnapshots = SnapshotFile[];
 
 /**
  * Setup snapshot testing
+ *
  * @param qunit QUnit global
  * @public
  * @deprecated

@@ -56,7 +56,6 @@
     "@types/qunit": "2.5.3",
     "@types/rsvp": "4.0.2",
     "broccoli-asset-rev": "3.0.0",
-    "dtslint": "0.3.0",
     "ember-ajax": "4.0.0",
     "ember-cli": "3.5.0",
     "ember-cli-code-coverage": "1.0.0-beta.6",
@@ -88,8 +87,7 @@
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.15.0",
     "tslint-sonarts": "1.8.0",
-    "typescript": "3.1.6",
-    "typescript-tslint-plugin": "0.0.5"
+    "typescript": "3.1.6"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
