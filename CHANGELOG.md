@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.0.1...v1.0.2) (2018-11-06)
+
+
+### Bug Fixes
+
+* ensure QUnit Assert type augmentation succeeds ([44cec0d](https://github.com/mike-north/ember-qunit-snapshots/commit/44cec0d))
+
 ## [1.0.1](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.0.0...v1.0.1) (2018-11-06)
 
 
