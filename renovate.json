@@ -1,7 +1,3 @@
 {
-  "extends": ["config:js-lib", ":pinOnlyDevDependencies"],
-  "automerge": true,
-  "major": {
-    "automerge": false
-  }
+  "extends": ["@mike-north/js-lib-renovate-config"]
 }
