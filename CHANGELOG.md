@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.1.0...v1.1.1) (2018-11-09)
+
+
+### Bug Fixes
+
+* shared semantic release and renovate configs ([94a1ff8](https://github.com/mike-north/ember-qunit-snapshots/commit/94a1ff8))
+
 # [1.1.0](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.0.3...v1.1.0) (2018-11-06)
 
 
