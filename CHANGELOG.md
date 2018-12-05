@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.1.1...v1.1.2) (2018-12-05)
+
+
+### Bug Fixes
+
+* **deps:** ci-info ([b036156](https://github.com/mike-north/ember-qunit-snapshots/commit/b036156))
+
 ## [1.1.1](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.1.0...v1.1.1) (2018-11-09)
 
 
