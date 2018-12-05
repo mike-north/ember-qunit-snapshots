@@ -22,6 +22,13 @@ before_script:
   - 'sudo chown root /opt/google/chrome/chrome-sandbox'
   - 'sudo chmod 4755 /opt/google/chrome/chrome-sandbox'
 
+stages:
+  - 'Tests'
+  - 'Additional Tests'
+  - 'Canary Tests'
+  - name: 'Deploy'
+    if: branch = master AND type = push
+
 jobs:
   fail_fast: true
   allow_failures:
@@ -31,7 +38,9 @@ jobs:
     # runs linting and tests with current locked deps
 
     - stage: 'Tests'
-      name: 'Tests'
+      name: 'Conventional Commits'
+      script: commitlint-travis
+    - name: 'Tests'
       install:
         - yarn install --non-interactive
       script:
@@ -49,8 +58,18 @@ jobs:
       env: EMBER_TRY_SCENARIO=ember-lts-3.4
     - env: EMBER_TRY_SCENARIO=ember-release
     - env: EMBER_TRY_SCENARIO=ember-beta
-    - env: EMBER_TRY_SCENARIO=ember-canary
     - env: EMBER_TRY_SCENARIO=ember-default-with-jquery
+
+    - stage: 'Canary Tests'
+      script:
+        - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO
+      env: EMBER_TRY_SCENARIO=ember-canary
+
+    - stage: 'Deploy'
+      name: 'Publish to npm'
+      install:
+        - yarn install --non-interactive
+      script: yarn semantic-release
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
@@ -60,7 +79,7 @@ install:
   - yarn install --no-lockfile --non-interactive
 
 script:
-  - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO && yarn travis-deploy-once "yarn semantic-release"
+  - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO
 
 after_script:
   - node_modules/.bin/codecov
