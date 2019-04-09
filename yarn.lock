@@ -10285,10 +10285,10 @@ snake-case@^2.1.0:
   dependencies:
     no-case "^2.2.0"
 
-snap-shot-core@^7.1.8:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/snap-shot-core/-/snap-shot-core-7.4.0.tgz#b3215fbb3e3bbc734706a56feff175040bb06254"
-  integrity sha512-rSRDbrfvYFp7dwtSJhFw+SUT4tS1tKSty7RsW9f9erP2fFyn7VIfYe9cgmseZytSMovB0I9WxATwKhGAsbYBCQ==
+snap-shot-core@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/snap-shot-core/-/snap-shot-core-8.0.0.tgz#d6254fccea3b9cd43b1945c72520fbb28d0b2b57"
+  integrity sha512-QhnM9tTqOPo/KQLbHjgmLyJXZPWQZsybjAvgzCobX9t1nubD93aokLfDhG6txEmlTQz9kY4Vd6iLjiLJao7rOg==
   dependencies:
     arg "4.1.0"
     check-more-types "2.24.0"
