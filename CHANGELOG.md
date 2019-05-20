@@ -1,3 +1,11 @@
+## [1.1.3](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.1.2...v1.1.3) (2019-05-20)
+
+
+### Bug Fixes
+
+* **deps:** fs-extra ([0814774](https://github.com/mike-north/ember-qunit-snapshots/commit/0814774))
+* **deps:** fs-extra ([#126](https://github.com/mike-north/ember-qunit-snapshots/issues/126)) ([e0550a8](https://github.com/mike-north/ember-qunit-snapshots/commit/e0550a8))
+
 ## [1.1.2](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.1.1...v1.1.2) (2018-12-05)
 
 
