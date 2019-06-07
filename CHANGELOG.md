@@ -1,3 +1,11 @@
+## [1.1.4](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.1.3...v1.1.4) (2019-06-07)
+
+
+### Bug Fixes
+
+* **deps:** snap-shot-core ([0fed612](https://github.com/mike-north/ember-qunit-snapshots/commit/0fed612))
+* **deps:** snap-shot-core ([#115](https://github.com/mike-north/ember-qunit-snapshots/issues/115)) ([3e82fd1](https://github.com/mike-north/ember-qunit-snapshots/commit/3e82fd1))
+
 ## [1.1.3](https://github.com/mike-north/ember-qunit-snapshots/compare/v1.1.2...v1.1.3) (2019-05-20)
 
 
