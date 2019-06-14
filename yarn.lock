@@ -10416,10 +10416,10 @@ snake-case@^2.1.0:
   dependencies:
     no-case "^2.2.0"
 
-snap-shot-core@^8.0.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/snap-shot-core/-/snap-shot-core-8.1.0.tgz#7faf00afff2988586c5a2590ffea3f6dfc7c4b07"
-  integrity sha512-rbWs3pScHAOqYlajtTTauAkzQb/8sl2QOwAugu3KQeCarsGJ6taXXwmeTuuoe6G9mq799AEA7vVNKt2+gJVN3A==
+snap-shot-core@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/snap-shot-core/-/snap-shot-core-9.0.0.tgz#6a685c8521691505e28b88b841797d9246498b32"
+  integrity sha512-OJ43nLjAP9JkXEHDbL0xJz4aOV5HbkNQsK6gwhhlraPwAe0HUPKUROmWi+RQwI0+G09jTpvvg4hDm1t4MMZI4Q==
   dependencies:
     arg "4.1.0"
     check-more-types "2.24.0"
