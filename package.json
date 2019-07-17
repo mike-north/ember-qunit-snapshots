@@ -55,7 +55,7 @@
     "@types/express": "4.17.0",
     "@types/fs-extra": "7.0.0",
     "@types/qunit": "2.9.0",
-    "@types/rsvp": "4.0.2",
+    "@types/rsvp": "4.0.3",
     "broccoli-asset-rev": "3.0.0",
     "ember-ajax": "5.0.0",
     "ember-cli": "3.10.1",
