@@ -52,7 +52,7 @@
     "@types/ember-test-helpers": "1.0.6",
     "@types/ember-testing-helpers": "0.0.3",
     "@types/ember__test-helpers": "0.7.9",
-    "@types/express": "4.17.1",
+    "@types/express": "4.17.2",
     "@types/fs-extra": "7.0.0",
     "@types/qunit": "2.9.0",
     "@types/rsvp": "4.0.3",
