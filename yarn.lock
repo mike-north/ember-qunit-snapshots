@@ -10796,10 +10796,10 @@ please-upgrade-node@^3.1.1:
   dependencies:
     semver-compare "^1.0.0"
 
-pluralize@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-7.0.0.tgz#298b89df8b93b0221dbf421ad2b1b1ea23fc6777"
-  integrity sha512-ARhBOdzS3e41FbkW/XWrTEtukqqLoK5+Z/4UeDaLuSW+39JPeFgs4gCGqsrJHVZX0fUrx//4OF0K1CUGwlIFow==
+pluralize@8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-8.0.0.tgz#1a6fa16a38d12a1901e0320fa017051c539ce3b1"
+  integrity sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==
 
 portfinder@^1.0.28:
   version "1.0.28"
@@ -12138,10 +12138,10 @@ snake-case@^3.0.3:
     dot-case "^3.0.4"
     tslib "^2.0.3"
 
-snap-shot-core@^8.0.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/snap-shot-core/-/snap-shot-core-8.1.0.tgz#7faf00afff2988586c5a2590ffea3f6dfc7c4b07"
-  integrity sha512-rbWs3pScHAOqYlajtTTauAkzQb/8sl2QOwAugu3KQeCarsGJ6taXXwmeTuuoe6G9mq799AEA7vVNKt2+gJVN3A==
+snap-shot-core@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/snap-shot-core/-/snap-shot-core-10.0.0.tgz#97b0fe7311377b4c00de6648f33c9d680c376df1"
+  integrity sha512-VZQQWhGWXgVBIO5s+S8sUrFjO6QCbULEhv8hBpllEYz2M0jNGdXrjDN8EHqsQSyqxW3cd2Vf0eYUCfq6nv0gpA==
   dependencies:
     arg "4.1.0"
     check-more-types "2.24.0"
@@ -12153,7 +12153,7 @@ snap-shot-core@^8.0.0:
     jsesc "2.5.2"
     lazy-ass "1.6.0"
     mkdirp "0.5.1"
-    pluralize "7.0.0"
+    pluralize "8.0.0"
     quote "0.4.0"
     ramda "0.26.1"
 
